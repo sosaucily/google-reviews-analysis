@@ -1,78 +1,77 @@
+import { useState, useEffect } from 'react'
 import './DetailedAnalysis.css'
 
 export default function DetailedAnalysis({ data }) {
+  const [sentimentData, setSentimentData] = useState(null)
   const lowRatings = data.reviews.filter(r => r.rating <= 2)
-  const positiveReviews = data.reviews.filter(r => r.rating >= 4)
 
-  // Count words in positive reviews
-  const getTopWords = (reviews, count = 10) => {
-    const wordCount = {}
-    const stopWords = new Set([
-      'that', 'with', 'this', 'from', 'were', 'have', 'been', 'they', 'very',
-      'there', 'their', 'about', 'would', 'which', 'also', 'when', 'room',
-      'rooms', 'karaoke', 'vibe', 'budapest', 'place', 'here', 'was', 'had',
-      'for', 'and', 'the', 'our', 'we', 'it', 'to', 'in', 'a', 'of', 'at'
-    ])
+  useEffect(() => {
+    fetch('/sentiment-analysis.json')
+      .then(response => response.json())
+      .then(data => setSentimentData(data))
+      .catch(err => console.error('Failed to load sentiment analysis:', err))
+  }, [])
 
-    reviews.forEach(review => {
-      // Skip reviews without a snippet
-      if (!review.snippet) return
-
-      const words = review.snippet
-        .toLowerCase()
-        .replace(/[^\w\s]/g, ' ')
-        .split(/\s+/)
-        .filter(word => word.length >= 4 && !stopWords.has(word))
-
-      words.forEach(word => {
-        wordCount[word] = (wordCount[word] || 0) + 1
-      })
-    })
-
-    return Object.entries(wordCount)
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, count)
+  if (!sentimentData) {
+    return <div className="loading">Loading sentiment analysis...</div>
   }
-
-  const positiveTopics = getTopWords(positiveReviews, 10)
-  const negativeTopics = lowRatings.length > 0 ? getTopWords(lowRatings, 10) : []
 
   return (
     <div className="detailed-analysis">
       <div className="topics-sections">
         <div className="section positive-topics">
-          <h2>Top Topics in Positive Reviews (4-5 ⭐)</h2>
+          <h2>What Customers Love (4-5 ⭐)</h2>
           <p className="section-description">
-            Most mentioned words in {positiveReviews.length} positive reviews
+            Top themes from {sentimentData.positive_reviews_analyzed} positive reviews
           </p>
-          <div className="topics-grid">
-            {positiveTopics.map(([word, count], index) => (
-              <div key={index} className="topic-card positive">
-                <div className="topic-rank">#{index + 1}</div>
-                <div className="topic-keyword">{word}</div>
-                <div className="topic-mentions">{count} mentions</div>
+          <div className="sentiment-topics">
+            {sentimentData.top_positive_topics.map((item, index) => (
+              <div key={index} className="sentiment-card positive">
+                <div className="sentiment-header">
+                  <span className="sentiment-rank">#{index + 1}</span>
+                  <h3 className="sentiment-topic">{item.topic}</h3>
+                </div>
+                <div className="sentiment-stats">
+                  <span className="sentiment-count">{item.count} mentions</span>
+                  <span className="sentiment-percentage">{item.percentage}% of reviews</span>
+                </div>
+                {item.examples.length > 0 && (
+                  <div className="sentiment-example">
+                    <p>"{item.examples[0].text.substring(0, 120)}..."</p>
+                    <span className="example-author">- {item.examples[0].user}</span>
+                  </div>
+                )}
               </div>
             ))}
           </div>
         </div>
 
-        {negativeTopics.length > 0 && (
-          <div className="section negative-topics">
-            <h2>Top Topics in Negative Reviews (1-2 ⭐)</h2>
-            <p className="section-description">
-              Most mentioned words in {lowRatings.length} negative reviews
-            </p>
-            <div className="topics-grid">
-              {negativeTopics.map(([word, count], index) => (
-                <div key={index} className="topic-card negative">
-                  <div className="topic-rank">#{index + 1}</div>
-                  <div className="topic-keyword">{word}</div>
-                  <div className="topic-mentions">{count} mentions</div>
+        <div className="section negative-topics">
+          <h2>Areas for Improvement (1-2 ⭐)</h2>
+          <p className="section-description">
+            Top issues from {sentimentData.negative_reviews_analyzed} negative reviews
+          </p>
+          <div className="sentiment-topics">
+            {sentimentData.top_negative_topics.map((item, index) => (
+              <div key={index} className="sentiment-card negative">
+                <div className="sentiment-header">
+                  <span className="sentiment-rank">#{index + 1}</span>
+                  <h3 className="sentiment-topic">{item.topic}</h3>
                 </div>
-              ))}
-            </div>
+                <div className="sentiment-stats">
+                  <span className="sentiment-count">{item.count} mentions</span>
+                  <span className="sentiment-percentage">{item.percentage}% of reviews</span>
+                </div>
+                {item.examples.length > 0 && (
+                  <div className="sentiment-example">
+                    <p>"{item.examples[0].text.substring(0, 120)}..."</p>
+                    <span className="example-author">- {item.examples[0].user}</span>
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
-        )}
+        </div>
       </div>
 
       <div className="section">

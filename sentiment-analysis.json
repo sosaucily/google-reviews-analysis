@@ -1,0 +1,253 @@
+{
+  "generated_at": "2025-12-14T19:23:12.912Z",
+  "positive_reviews_analyzed": 1102,
+  "negative_reviews_analyzed": 60,
+  "top_positive_topics": [
+    {
+      "topic": "Fun Atmosphere",
+      "count": 232,
+      "percentage": "21.1",
+      "examples": [
+        {
+          "text": "We had a great time with our bachelor party group. We rented a private room first and afterwards went on in the main room. It was a lot of fun and nice people. I would definitely come back",
+          "rating": 5,
+          "date": "2 months ago",
+          "user": "Roman Srnec"
+        },
+        {
+          "text": "We booked a max. 8 persons room, although it was 5 of us, it was already pretty crowded in there since the rooms were small and packed. But the guide spoke perfect English and explained how the equipment functioned in thorough details! It was reasonable, 2000ft/person and almost all songs we searched were available. To our surprise, even bollywood options were available! Definitely returning here again for a pleasant evening out with friends!",
+          "rating": 5,
+          "date": "4 months ago",
+          "user": "Ayesha Ashfaq"
+        },
+        {
+          "text": "I enjoyed the atmosphere and found the manager professional and nice. She was also singing with us. However, there was an issue with one of the (male) waiters at the start of the event. When I turned on music in a small karaoke room, he angrily closed it and shouted, saying it was not for our team. I asked him to speak more politely and not shout. I understand he might have been under stress, but a professional approach would have been better.",
+          "rating": 4,
+          "date": "11 months ago",
+          "user": "Tuncay Yakar"
+        }
+      ]
+    },
+    {
+      "topic": "Great Staff & Service",
+      "count": 199,
+      "percentage": "18.1",
+      "examples": [
+        {
+          "text": "We had a great time with our bachelor party group. We rented a private room first and afterwards went on in the main room. It was a lot of fun and nice people. I would definitely come back",
+          "rating": 5,
+          "date": "2 months ago",
+          "user": "Roman Srnec"
+        },
+        {
+          "text": "I enjoyed the atmosphere and found the manager professional and nice. She was also singing with us. However, there was an issue with one of the (male) waiters at the start of the event. When I turned on music in a small karaoke room, he angrily closed it and shouted, saying it was not for our team. I asked him to speak more politely and not shout. I understand he might have been under stress, but a professional approach would have been better.",
+          "rating": 4,
+          "date": "11 months ago",
+          "user": "Tuncay Yakar"
+        },
+        {
+          "text": "Very nice looking and fun rooms. The tablet to select songs is easy to use and the staff is very friendly",
+          "rating": 5,
+          "date": "a month ago",
+          "user": "alec"
+        }
+      ]
+    },
+    {
+      "topic": "Good Song Selection",
+      "count": 54,
+      "percentage": "4.9",
+      "examples": [
+        {
+          "text": "We booked a max. 8 persons room, although it was 5 of us, it was already pretty crowded in there since the rooms were small and packed. But the guide spoke perfect English and explained how the equipment functioned in thorough details! It was reasonable, 2000ft/person and almost all songs we searched were available. To our surprise, even bollywood options were available! Definitely returning here again for a pleasant evening out with friends!",
+          "rating": 5,
+          "date": "4 months ago",
+          "user": "Ayesha Ashfaq"
+        },
+        {
+          "text": "I enjoyed the atmosphere and found the manager professional and nice. She was also singing with us. However, there was an issue with one of the (male) waiters at the start of the event. When I turned on music in a small karaoke room, he angrily closed it and shouted, saying it was not for our team. I asked him to speak more politely and not shout. I understand he might have been under stress, but a professional approach would have been better.",
+          "rating": 4,
+          "date": "11 months ago",
+          "user": "Tuncay Yakar"
+        },
+        {
+          "text": "Very nice looking and fun rooms. The tablet to select songs is easy to use and the staff is very friendly",
+          "rating": 5,
+          "date": "a month ago",
+          "user": "alec"
+        }
+      ]
+    },
+    {
+      "topic": "Great for Groups & Parties",
+      "count": 52,
+      "percentage": "4.7",
+      "examples": [
+        {
+          "text": "We had a great time with our bachelor party group. We rented a private room first and afterwards went on in the main room. It was a lot of fun and nice people. I would definitely come back",
+          "rating": 5,
+          "date": "2 months ago",
+          "user": "Roman Srnec"
+        },
+        {
+          "text": "We booked a max. 8 persons room, although it was 5 of us, it was already pretty crowded in there since the rooms were small and packed. But the guide spoke perfect English and explained how the equipment functioned in thorough details! It was reasonable, 2000ft/person and almost all songs we searched were available. To our surprise, even bollywood options were available! Definitely returning here again for a pleasant evening out with friends!",
+          "rating": 5,
+          "date": "4 months ago",
+          "user": "Ayesha Ashfaq"
+        },
+        {
+          "text": "I enjoyed the atmosphere and found the manager professional and nice. She was also singing with us. However, there was an issue with one of the (male) waiters at the start of the event. When I turned on music in a small karaoke room, he angrily closed it and shouted, saying it was not for our team. I asked him to speak more politely and not shout. I understand he might have been under stress, but a professional approach would have been better.",
+          "rating": 4,
+          "date": "11 months ago",
+          "user": "Tuncay Yakar"
+        }
+      ]
+    },
+    {
+      "topic": "Clean & Well-Maintained",
+      "count": 14,
+      "percentage": "1.3",
+      "examples": [
+        {
+          "text": "I had an absolutely fantastic time at vibe rooms. All the staff were lovely, the rooms were very nicely styled and really clean. We had the medium room for 1 hour which was NOT enough time. It was very reasonably priced at €3000 for two people. I recommend this place to anyone who wants karaoke while in Budapest.",
+          "rating": 5,
+          "date": "3 years ago",
+          "user": "Adriano Reid"
+        },
+        {
+          "text": "A good karaoke establishment.\n- The staff is top notch, they are good with people, setting the mood, helping you when needed.\n- The karaoke machine works great, but we didn't find most of the songs we were looking for. At least what's in it is good quality. Mics work great, the speakers distort at higher volumes (they are a bit overdriven).\n- The room itself (VIP room) had some weird smell, maybe coming from the AC unit or the couches, floor. It would need some deeper cleaning after a big party.\n- Toilet was missing the seat. I hope I don't need to explain this one...\nOverall, we had a great time, but there is room for improvement.",
+          "rating": 4,
+          "date": "3 years ago",
+          "user": "Viktor"
+        },
+        {
+          "text": "Booked a room for 2 of us with prosecco included. We had such a great time! The medium room is cosy and well-equipped, most of the songs we wanted were available, the staff is super friendly and we even got fireworks with the prosecco. Such a great experience. Amazing all around!!",
+          "rating": 5,
+          "date": "2 years ago",
+          "user": "Mirna Unuk"
+        }
+      ]
+    }
+  ],
+  "top_negative_topics": [
+    {
+      "topic": "Poor Service Quality",
+      "count": 10,
+      "percentage": "16.7",
+      "examples": [
+        {
+          "text": "The karaoke and rooms were fine.\n\nHowever, the service were not very accommodating. They lacked a lot of the stuff they had on the menu. They weren't able to change the menu or make any \"deals\"",
+          "rating": 1,
+          "date": "2 months ago",
+          "user": "Thomas"
+        },
+        {
+          "text": "There was no toilet seat in the ladies room the VIP room was smelling like mold and there was no airflow. We managed to break a glass and they wanted to make us pay for it. I never experienced this ever. The bartender guy was rude as hell. Not recommend…",
+          "rating": 1,
+          "date": "7 months ago",
+          "user": "Barni Lencsés"
+        },
+        {
+          "text": "Was rather disappointed.  Walking in it smelt like a moldy basement.  The rooms themselves were OK with the lighting controls, and the music selections were adequate.  Most disturbing however. We were told they accept tips.  I would gladly give if I felt I was getting good service from staff.  No one asked us what we wanted to drink that evening.",
+          "rating": 2,
+          "date": "3 years ago",
+          "user": "Tim Graf (GSTOUT)"
+        }
+      ]
+    },
+    {
+      "topic": "Technical/Equipment Issues",
+      "count": 5,
+      "percentage": "8.3",
+      "examples": [
+        {
+          "text": "Microphone didnt work. No service at all. Free shot for giving 5 stars on Google. The sound from the big karaoke room comes into the small ones.",
+          "rating": 1,
+          "date": "a year ago",
+          "user": "Hehe"
+        },
+        {
+          "text": "Disappointing KTV experience. Unstable karaoke system constantly disconnected, and song options were limited, making it challenging to find our preferred songs. Not worth the hype and price considering the technical issues and limited song selection.",
+          "rating": 1,
+          "date": "2 years ago",
+          "user": "Kimberly"
+        },
+        {
+          "text": "Real bad! Been to many karaoke places around the world, this hit the spot of being the worst. The room was small , the system does not work, you cannot edit the playlist properly. We were suggested to connect to and use YouTube songs. The microphones do not even sound like microphones. The staff are unfriendly and unkind, you can hear all the other rooms shouting while you want to sing yourselves. OVERALL:  instead of a great night out you get real beginner standard. They made little to no investment but they want all your money. 👎🏻",
+          "rating": 1,
+          "date": "2 years ago",
+          "user": "Barbara Tan"
+        }
+      ]
+    },
+    {
+      "topic": "Time/Booking Issues",
+      "count": 5,
+      "percentage": "8.3",
+      "examples": [
+        {
+          "text": "They let us in 5 mins late, and they made us leave 5 mins earlier, and those 10 mins matter because the whole booking was just for an hour.",
+          "rating": 1,
+          "date": "4 months ago",
+          "user": "Omar Ahmed"
+        },
+        {
+          "text": "Really poor. YouTube karaoke, all the staff seemed like they didn’t actually ever want to run a karaoke bar and hated every minute of it.",
+          "rating": 1,
+          "date": "a year ago",
+          "user": "Dave Shaw"
+        },
+        {
+          "text": "Booked as the main event for a birthday party at 23:00 tonight, they called us an hour and 20 minutes before our booking to say they had double booked us and we can no longer get our slot, would have been useful to know beforehand as we have already made our way into town and is too late to book somewhere else.",
+          "rating": 1,
+          "date": "2 years ago",
+          "user": "Simeon Nelson"
+        }
+      ]
+    },
+    {
+      "topic": "Room Size & Space",
+      "count": 3,
+      "percentage": "5.0",
+      "examples": [
+        {
+          "text": "Microphone didnt work. No service at all. Free shot for giving 5 stars on Google. The sound from the big karaoke room comes into the small ones.",
+          "rating": 1,
+          "date": "a year ago",
+          "user": "Hehe"
+        },
+        {
+          "text": "Real bad! Been to many karaoke places around the world, this hit the spot of being the worst. The room was small , the system does not work, you cannot edit the playlist properly. We were suggested to connect to and use YouTube songs. The microphones do not even sound like microphones. The staff are unfriendly and unkind, you can hear all the other rooms shouting while you want to sing yourselves. OVERALL:  instead of a great night out you get real beginner standard. They made little to no investment but they want all your money. 👎🏻",
+          "rating": 1,
+          "date": "2 years ago",
+          "user": "Barbara Tan"
+        },
+        {
+          "text": "미디움 방을 이용했는데 한국의 노래방 시스템과 너무 다름.  마이크의 소리는 너무 작고 에코가 없어요 테블릿으로 노래방 시스템을 이용하면 한국 노래는 거의 없고 영어자막으로 나오고  유튜브를 통해서 노래를 재생하면 소리가 너무 커서 마이크를 통한 목소리가 거의 안 들려서 노래방에서 노래를 부르는 의미가 없음 아마 방음 시설이 제대로 안 된 곳에서 노래방으로 운영을 해서 마이크 소리를 제한한거같음 한국 노래방을 생각하고 이곳에 가면 엄청 실망할거임 싸길래 그냥 가봤는데 택시비랑 1시간 이용비로 2만원 낭비함 근데 직원들은 친절했음 단지 환경의 차이가 있어서 실망했을뿐 직원들은 열심히 일했음\nI used a medium room, but it's so different from the Korean karaoke system. The sound of the microphone is too small and there is no echo. If you use the karaoke system, there are almost no Korean songs and they come out with English subtitles, and when you play the songs through YouTube, the sound is so loud that you can barely hear your voice through the microphone, so there's no point in singing in a karaoke. It seems that they operate the karaoke in a place that doesn't have proper soundproofing, so the microphone sound is limited. If you go here thinking of a Korean karaoke, you'll be very disappointed. I just went because it was cheap, but I wasted 20,000 won on taxi fare and 1-hour usage fee. But the staff were friendly. I was just disappointed because the environment was different, but the staff worked hard.",
+          "rating": 1,
+          "date": "a year ago",
+          "user": "윤규상"
+        }
+      ]
+    },
+    {
+      "topic": "Cleanliness Concerns",
+      "count": 2,
+      "percentage": "3.3",
+      "examples": [
+        {
+          "text": "There was no toilet seat in the ladies room the VIP room was smelling like mold and there was no airflow. We managed to break a glass and they wanted to make us pay for it. I never experienced this ever. The bartender guy was rude as hell. Not recommend…",
+          "rating": 1,
+          "date": "7 months ago",
+          "user": "Barni Lencsés"
+        },
+        {
+          "text": "Was rather disappointed.  Walking in it smelt like a moldy basement.  The rooms themselves were OK with the lighting controls, and the music selections were adequate.  Most disturbing however. We were told they accept tips.  I would gladly give if I felt I was getting good service from staff.  No one asked us what we wanted to drink that evening.",
+          "rating": 2,
+          "date": "3 years ago",
+          "user": "Tim Graf (GSTOUT)"
+        }
+      ]
+    }
+  ]
+}
