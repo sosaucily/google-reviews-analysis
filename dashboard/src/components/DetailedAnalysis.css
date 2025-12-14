@@ -4,6 +4,18 @@
   gap: 2rem;
 }
 
+.topics-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 1100px) {
+  .topics-sections {
+    grid-template-columns: 1fr;
+  }
+}
+
 .section {
   background: white;
   border-radius: 12px;
@@ -12,35 +24,64 @@
 }
 
 .section h2 {
-  margin: 0 0 1.5rem 0;
-  font-size: 1.8rem;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
   color: #1f2937;
+}
+
+.positive-topics h2 {
+  color: #059669;
+}
+
+.negative-topics {
+  border: 2px solid #fee2e2;
+}
+
+.negative-topics h2 {
+  color: #dc2626;
 }
 
 .section-description {
   color: #6b7280;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
 }
 
 .topics-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.75rem;
 }
 
 .topic-card {
   background: #f9fafb;
   border: 2px solid #e5e7eb;
   border-radius: 8px;
-  padding: 1rem;
+  padding: 0.75rem;
   text-align: center;
   transition: all 0.2s;
 }
 
-.topic-card:hover {
-  border-color: #667eea;
+.topic-card.positive {
+  border-color: #d1fae5;
+  background: #f0fdf4;
+}
+
+.topic-card.positive:hover {
+  border-color: #059669;
   transform: translateY(-2px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(5, 150, 105, 0.1);
+}
+
+.topic-card.negative {
+  border-color: #fecaca;
+  background: #fef2f2;
+}
+
+.topic-card.negative:hover {
+  border-color: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(220, 38, 38, 0.1);
 }
 
 .topic-rank {
