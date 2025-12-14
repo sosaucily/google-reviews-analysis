@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npx ts-node:*)",
+      "Bash(node --loader ts-node/esm:*)",
+      "Bash(npx tsc:*)",
+      "Bash(node analyze-reviews.js:*)",
+      "Bash(git init:*)",
+      "Bash(npm create:*)",
+      "Bash(npm run build:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

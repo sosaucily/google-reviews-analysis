@@ -1,0 +1,132 @@
+.detailed-analysis {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.8rem;
+  color: #1f2937;
+}
+
+.section-description {
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.topic-card {
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.topic-card:hover {
+  border-color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.topic-rank {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.topic-keyword {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 0.25rem;
+  text-transform: capitalize;
+}
+
+.topic-mentions {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.review-card {
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.2s;
+}
+
+.review-card:hover {
+  border-color: #667eea;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-card.low-rating {
+  border-color: #fecaca;
+  background: #fef2f2;
+}
+
+.review-card.low-rating:hover {
+  border-color: #ef4444;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.review-rating {
+  font-size: 1.2rem;
+}
+
+.review-meta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.review-author {
+  font-weight: 600;
+  color: #374151;
+}
+
+.review-date {
+  color: #9ca3af;
+}
+
+.review-snippet {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.low-ratings-section {
+  border: 2px solid #fee2e2;
+}
+
+.low-ratings-section h2 {
+  color: #dc2626;
+}
