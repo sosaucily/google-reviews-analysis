@@ -15,6 +15,9 @@ export default function DetailedAnalysis({ data }) {
     ])
 
     reviews.forEach(review => {
+      // Skip reviews without a snippet
+      if (!review.snippet) return
+
       const words = review.snippet
         .toLowerCase()
         .replace(/[^\w\s]/g, ' ')
@@ -82,11 +85,11 @@ export default function DetailedAnalysis({ data }) {
                   {"⭐".repeat(review.rating)}
                 </div>
                 <div className="review-meta">
-                  <span className="review-author">{review.user.name}</span>
-                  <span className="review-date">{review.date}</span>
+                  <span className="review-author">{review.user?.name || 'Anonymous'}</span>
+                  <span className="review-date">{review.date || 'Unknown date'}</span>
                 </div>
               </div>
-              <div className="review-snippet">{review.snippet}</div>
+              <div className="review-snippet">{review.snippet || 'No review text'}</div>
             </div>
           ))}
         </div>
@@ -106,11 +109,11 @@ export default function DetailedAnalysis({ data }) {
                     {"⭐".repeat(review.rating)}
                   </div>
                   <div className="review-meta">
-                    <span className="review-author">{review.user.name}</span>
-                    <span className="review-date">{review.date}</span>
+                    <span className="review-author">{review.user?.name || 'Anonymous'}</span>
+                    <span className="review-date">{review.date || 'Unknown date'}</span>
                   </div>
                 </div>
-                <div className="review-snippet">{review.snippet}</div>
+                <div className="review-snippet">{review.snippet || 'No review text'}</div>
               </div>
             ))}
           </div>

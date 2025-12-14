@@ -11,7 +11,8 @@
       "Bash(npm run build:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(netlify deploy:*)"
+      "Bash(netlify deploy:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
